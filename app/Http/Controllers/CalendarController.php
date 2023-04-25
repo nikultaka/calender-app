@@ -8,7 +8,6 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use App\Models\Event;
-use Validator;
 use Carbon\Carbon;
 
 class CalendarController extends BaseController
@@ -35,9 +34,7 @@ class CalendarController extends BaseController
 
     function addEvent(Request $request)
     {
-        // echo '<pre>';
-        // print_r($request->all());
-        // die;
+   
 
         $result = array();
         $result['status'] = 0;
@@ -46,9 +43,6 @@ class CalendarController extends BaseController
         $data = $request->all();
         $id = isset($data['id']) &&  $data['id'] !== '' ? $data['id'] : '';
 
-        // echo '<pre>';
-        // print_r($id);
-        // die;
 
         if (!$id) {
 
@@ -69,6 +63,7 @@ class CalendarController extends BaseController
                 $result['msg'] = "Event inserted Successfully";
                 $result['id'] = $insert_id;
             }
+
         } else {
          
 

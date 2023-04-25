@@ -136,14 +136,6 @@
 
                 </ul>
 
-                <!-- <label>
-                    Start date:
-                    <input type="date" placeholder="Date : From" id="start_date">
-                </label>
-                <label>
-                    End date:
-                    <input type="date" placeholder="Date : To" id="end_date">
-                </label><br> -->
             </div>
         </div>
     </nav>
@@ -158,7 +150,6 @@
     <script>
         var BASE_URL = "{{ url('/') }}";
         var events = @json($events);
-        // console.log(array)
     </script>
     <!-- custom  script -->
     <script src="{{ asset('assets/script.js')}}"></script>

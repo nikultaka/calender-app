@@ -15,7 +15,6 @@ $(function () {
             left: 'prev , next  today',
             center: 'title',
             right: 'month , agendaWeek , agendaDay'
-            // right: 'month,agendaWeek,timelineCustom,agendaDay,prev,today,next',
         },
 
         events: events,
@@ -23,27 +22,6 @@ $(function () {
         selectHelper: true,
         unselectAuto: true,
         editable: true,
-        // fixedWeekCount: false,
-        // contentHeight: 650,
-        // defaultView: 'basic',
-        // visibleRange: {
-        //     start: moment('2023-4-22'),
-        //     end: moment('2023-4-29')
-        // },
-        // views: {
-        //     timelineCustom: {
-        //         type: 'timeline',
-        //         buttonText: 'Year',
-        //         dateIncrement: { years: 1 },
-        //         slotDuration: { months: 1 },
-        //         visibleRange: function (currentDate) {
-        //             return {
-        //                 start: currentDate.clone().startOf('year'),
-        //                 end: currentDate.clone().endOf("year")
-        //             };
-        //         }
-        //     }
-        // },
 
 
         eventRender: function eventRender(event, element, view) {
@@ -145,23 +123,6 @@ $(function () {
     });
 
 
-    $('#start_date').on('change', function () {
-        $('#calendar').fullCalendar('option', 'validRange', {
-            // Don't worry if user didn't provide *any* inputs.
-            start: this.value,
-            end: $('#end_date').val()
-        });
-    });
-
-
-    $('#end_date').on('change', function () {
-        $('#calendar').fullCalendar('option', 'validRange', {
-            // Don't worry if user didn't provide *any* inputs.
-            start: $('#start_date').val(),
-            end: this.value
-        });
-    });
-
     let yearArray = []
     let currentYear = new Date().getFullYear()
     let currentMonth = new Date().getMonth()
@@ -197,7 +158,6 @@ $(function () {
         $('#calendar').fullCalendar('changeView', 'month', this.value);
         $('#calendar').fullCalendar('gotoDate', $(".select_year").val() + "-" + this.value + "-1");
         $('#calendar').fullCalendar('rerenderEvents');
-        // $('#calendar').fullCalendar('refetchEvents');
     });
 
 
@@ -205,7 +165,6 @@ $(function () {
         $('#calendar').fullCalendar('changeView', 'month', this.value);
         $('#calendar').fullCalendar('gotoDate', this.value + "-" + $(".select_month").val() + "-1");
         $('#calendar').fullCalendar('rerenderEvents');
-        // $('#calendar').fullCalendar('refetchEvents');
     });
 
 });
