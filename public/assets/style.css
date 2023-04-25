@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Neue Montreal;
+    src: url(https://www.upwork.com/static/fonts-global/4.0.1/neue-montreal-regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Neue Montreal;
+    src: url(https://www.upwork.com/static/fonts-global/4.0.1/neue-montreal-medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+body {
+    font-family: "Neue Montreal", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.upwork-logo {
+    height: 20px;
+    width: 100px;
+}
+
+.color-green {
+    color: #1972F5;
+}
+
+nav {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar-custom li {
+    padding-right: 10px;
+
+}
+
+.icon-black {
+    height: 20px;
+    width: 40px;
+}
+
+.nav-profile-img img {
+    width: 26px;
+    border-radius: 16px;
+
+}
+
+.nav-opt {
+    display: contents;
+
+}
+
+#inputGroup-sizing-default {
+    background: unset;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.search-input {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-left-color: white;
+
+    border-top-color: rgb(222, 226, 230);
+    border-right-color: rgb(222, 226, 230);
+    border-bottom-color: rgb(222, 226, 230);
+    border-left-color: rgb(222, 226, 230);
+
+}
+
+.search-input :hover {
+    background-color: white !important;
+}
+
+.sinput {
+    border-left: unset;
+}
+
+.fc-button {
+    background: #1972F5 !important;
+    border: unset !important;
+    box-shadow: unset !important;
+    color: white !important;
+    border-radius: 20px !important;
+    padding: 12px 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.fc-state-active {
+    opacity: 0.6 !important;
+}
+
+.fc-content {
+    background: #1972F5 !important;
+}
+
+
+.fc-event {
+    border: unset !important;
+    background: #1972F5 !important;
+
+}
+.select_year , .select_month  {
+    margin-left: unset !important;
+}
